@@ -24,6 +24,16 @@ class App extends React.Component {
       })
   }
 
+  getUserOnSearch = (username) => {
+    axios.get(`https://api.github.com/users/${username}`)
+      .then(res=> {
+        this.setState({
+          search:res.data
+        });
+      }).catch(err => {
+        console.error(err);
+      })
+  }
   getFollowersOnClick = () =>{
     axios.get(`https://api.github.com/users/Arison13/followers`)
     .then(res => {
@@ -37,7 +47,7 @@ class App extends React.Component {
   render() {
     return (
     <div className="main">
-      <SearchBar/>
+      <SearchBar data={this.state.followers}/>
       {/* still need to add functionality to the searchbar, im just doing this as a side project now */}
 
       <h1>User Card 2.0</h1>
