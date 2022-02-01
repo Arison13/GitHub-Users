@@ -1,0 +1,11 @@
+input{
+    text-align: center;
+    width: 50%;
+    margin-left: 24.5%;
+    padding: 5px;
+    font-weight: 600;
+}
+input:hover {
+    border: 1px solid blue;
+
+}

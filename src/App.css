@@ -1,0 +1,38 @@
+.main {
+  color:aliceblue;
+  /* border: 1px red solid; */
+}
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: capitalize;
+}
+.user-card {
+  text-align: center;
+  /* border: 1px solid red; */
+  padding: 15px 0 ;
+}
+
+.btn{
+  /* border: 2px solid blue; */
+  padding: 5px;
+  margin: 1em 0;
+  background-color: red;
+  color:whitesmoke;
+  font-size:14px;
+  font-weight:500;
+  text-shadow: 1px 1px black ;
+}
+
+.btn:hover{
+  background-color: blue;
+  color: white;
+  text-shadow: 0 0 white;
+}
+
+
+
+
+
+
+
+
